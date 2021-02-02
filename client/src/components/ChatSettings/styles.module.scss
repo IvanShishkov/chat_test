@@ -1,0 +1,27 @@
+.wrapper {
+  position: absolute;
+  right: 5px;
+  top: 60px;
+  background-color: #17212b;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      height: 35px;
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      box-sizing: border-box;
+      cursor: pointer;
+      &:hover {
+        background-color: #223346;
+      }
+    }
+  }
+}

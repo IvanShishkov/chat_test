@@ -1,0 +1,9 @@
+export const SHOW_ALERT = "ALERT/SHOW_ALERT";
+export const HIDE_ALERT = "ALERT/HIDE_ALERT";
+export const SHOW_DIALOG = "ALERT/SHOW_DIALOG";
+export const SET_USER = "USER/SET_USER";
+export const INIT_CHAT = "CHAT/INIT_CHAT";
+export const NEW_CHAT = "CHAT/NEW_CHAT";
+export const DELETE_CHAT = "CHAT/DELETE_CHAT";
+export const SET_ACTIVE_CHAT = "CHAT/SET_ACTIVE_CHAT";
+export const ADD_MESSAGE = "MESSAGE/ADD_MESSAGE";

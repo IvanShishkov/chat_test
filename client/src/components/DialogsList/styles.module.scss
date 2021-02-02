@@ -1,0 +1,103 @@
+.dialogsWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  background-color: rgb(23, 33, 43);
+  z-index: 2;
+  border-right: 1px solid rgb(12, 16, 20);
+  .dialogs {
+    display: flex;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+    ul {
+      width: 100%;
+      a {
+        text-decoration: none;
+      }
+      li {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        transition: all 0.2s ease-in-out;
+
+        .chatImg {
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-sizing: border-box;
+          .letter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f5f5f5;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 25px;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+        }
+        .chatInfo {
+          margin-left: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            h5 {
+              color: rgb(245, 245, 245);
+            }
+            span {
+              font-size: 14px;
+              color: rgb(127, 145, 164);
+            }
+          }
+
+          p {
+            overflow: hidden;
+            color: rgb(127, 145, 164);
+            font-size: 14px;
+          }
+        }
+        &.active {
+          background-color: rgb(43, 82, 120);
+          p {
+            color: rgb(245, 245, 245);
+          }
+          span {
+            color: rgb(245, 245, 245);
+          }
+        }
+        &:hover {
+          background-color: rgb(43, 82, 120);
+        }
+      }
+    }
+  }
+}
+
+.showDialogList {
+  display: block !important;
+  width: 100% !important;
+}
+
+@media (max-width: 767px) {
+  .dialogsWrapper {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .dialogsWrapper {
+    display: none;
+  }
+}
